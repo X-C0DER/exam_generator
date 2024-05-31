@@ -1,0 +1,167 @@
+@import url("font-awesome/css/font-awesome.min.css");
+
+body{
+	font-size: 12pt;
+	margin-left: auto;
+	margin-right: auto;
+	width:297mm;
+	box-shadow: 3px 3px 9px gray;
+	padding: 20px;
+	min-height: 210mm;
+	font-family: sans-serif;
+}
+.q-type{
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+#info-stud{
+	font-weight: bold;
+	font-size:17px;
+	margin-top:20px;
+	margin-left: 30px;
+}
+.question{
+	margin-left: 50px;
+	padding: 7px;
+	width: 90%;
+	margin-top:6px;
+}
+
+.choice{
+	width: 80%;
+	margin-left: 85px;
+}
+
+.prnt-btn{
+	background: lightgreen;
+	font-size: 17px;
+	color: black;
+	font-weight: bold;
+	border: none;
+	padding: 7px 12px;
+	cursor: pointer;
+	border-radius: 0px 10px 10px 10px;
+	margin-left: 7px;
+}
+
+.answer-sheet{
+	width: 1000px;
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.answer-sheet span{
+	margin-top:5px;
+	margin-left: 20px;
+	display: inline-block;
+	width: 140px;
+	white-space: nowrap;
+}
+
+.answer-sheet i{
+	font-style: normal;
+	width: 20px;
+	display:inline-block;
+}
+
+.prnt-btn a{
+	font-family: inherit;
+}
+
+a{text-decoration: none !important;}
+
+.del-btn{background: #ff8887; border-radius: 10px;}
+.ger-btn{
+	border-radius: 10px;
+	background: orange;
+}
+
+.back-btn{
+	border-radius: 10px 0px 10px 10px;
+ 	background: lightblue;
+	float: right;
+}
+
+#exam-all{
+	margin: 0 auto;
+	margin-top: 30px;
+	border: 1px solid gray;
+	color: black;
+}
+
+#exam-view{
+	width: 100%;
+	min-height: 400px;
+	max-height: 700px;
+	overflow: scroll;
+}
+
+#exam-view:focus{outline: 0px;}
+
+.editable-msg{
+	font-size: 18px;
+	border-bottom: 1px solid gray;
+	padding: 7px 15px;
+}
+
+.editable-msg i{
+	margin-right: 13px;
+	cursor: pointer;
+}
+
+.editable-msg .text{
+	text-transform: lowercase;
+	font-style: normal;
+	font-weight: bold;
+}
+
+#A section{
+	padding: 30px !important;
+	padding-top: 5px !important;
+	width: 90% !important;
+}
+
+#temp-msg{
+	background: lightblue;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	position: fixed;
+	top: 60px;
+	z-index: 2233333;
+	left: 50%;
+	width: 40%;
+	transform: translateX(-50%);
+}
+
+@media print{
+	body{
+		box-shadow: none;
+		padding: 0;
+	}
+	.no-print{display: none;}
+	#exam-view{
+		margin-top: 0;
+		border: none;
+		padding: 0;
+		max-height: 100%;
+		overflow: hidden;
+	}
+	#exam-all{
+		margin-top: 0;
+		border: none;
+		padding: 0;
+		max-height: 100%;
+		overflow: hidden;
+	}
+	#A section{
+		padding: 0px !important;
+		margin-top: 0 !important;
+		padding-top: 0px !important;
+		width: 90% !important;
+	}
+}

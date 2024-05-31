@@ -1,0 +1,110 @@
+@import url("font-awesome/css/font-awesome.min.css");
+
+a {text-decoration: none;}
+
+#signup-body{
+	padding: 0;
+	margin: 0;
+	font-family: Gisha;
+	background: #161415 url(../images/desk4.jpg) no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+	height: 100vh;
+}
+
+#signup_main{
+	height: 100vh;
+	background-color: rgba(0,0,0,0);
+}
+
+#signup-card{
+	background: transparent;
+	width: 400px;
+	padding: 40px;
+	margin: 0 auto;
+	/*background-color: rgba(0, 0, 0, 0.35);
+	border-radius: 2px;
+	box-shadow: 1px 1px 30px black;*/
+}
+
+#signup-card h1{
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.signup-head{
+	text-align: center;
+}
+
+.sign-input{
+	margin-top: 20px;
+}
+
+.sign-input input{
+	font-size: 13px;
+	background: rgba(255,255,255,0.8);
+	color: black;
+	border-radius: 0px 2px 2px 0px;
+	padding: 5px;
+	width: 350px;
+	border:none;
+	height: 30px;
+ 	vertical-align: middle;
+}
+
+.sign-input i{
+	background: rgba(255,255,255,0.8);
+	font-size: 16px;
+	color: #444;
+	padding: 12px 0px 12px 0;
+	width: 30px;
+	vertical-align: middle;
+	margin-right: -4px;
+	border-radius: 2px 0px 0px 2px;
+	text-align: center;
+}
+
+.sing-btn{
+	word-spacing: 2px;
+	margin-top: 30px;
+	border-radius: 10px;
+	border:none;
+	padding:6px;
+	width:100px;
+	background: rgba(0,0,0,0.3);
+	color: white;
+	font-size: 13px;
+	transition: ease-in-out 0.3s;
+	cursor: pointer;
+}
+
+.sing-btn:hover{
+	color: #444;
+ 	background: rgba(255,255,255,0.8);
+	transition: ease-in-out 0.3s;
+}
+
+#sign-error{
+	border: rgb(100, 0 , 0) 1px solid;
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(127,0,0,0.3);
+	text-align: left;
+}
+
+#temp-msg{
+	background: lightblue;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	position: fixed;
+	top: 60px;
+	z-index: 2233333;
+	left: 50%;
+	width: 40%;
+	transform: translateX(-50%);
+}
